@@ -22,14 +22,8 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const pelicula = new Pelicula({
-        id:req.body.id,
-        title:req.body.title,
-        vote_average:req.body.vote_average,
-        budget:req.body.budget,
-        homepage:req.body.homepage,
-        poster_path:req.body.poster_path,
-        overviwe:req.body.overviwe,
-        release_date:req.body.release_date
+        id:req.body.id,    
+        poster_path:req.body.poster_path,       
     })
     
     try{
