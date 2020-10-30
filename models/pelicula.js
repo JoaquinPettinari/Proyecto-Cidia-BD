@@ -9,7 +9,16 @@ const PeliculaSchema = mongoose.Schema({
     poster_path:{
         type:String,
         require:true
-    }
+    },
+    tipo:{
+        type:String,
+        require:true
+    },
+    profile_path:{
+        type:String,
+        require:true
+    },
+
 })
 
 
